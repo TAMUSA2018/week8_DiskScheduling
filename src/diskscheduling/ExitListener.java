@@ -1,4 +1,4 @@
-package diskscheduling;
+package com.diskscheduling;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

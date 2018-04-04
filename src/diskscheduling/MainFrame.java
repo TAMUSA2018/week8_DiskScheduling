@@ -1,4 +1,4 @@
-package diskscheduling;
+package com.diskscheduling;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -129,8 +129,20 @@ public class MainFrame extends JFrame implements ActionListener {
 
 		head.setFont(new Font("Vardana", Font.BOLD, 14));
 		head.setForeground(Color.BLUE);
+
+
+
+
+
+		// !!!!!! New Code !!!!!!!
 		head.setText("Algorithm: " + algorithmCombo_.getSelectedItem()
-				+ " ^_^ Head Starting point: " + startingPoint);
+				+ " ^_^ Head Starting point: " + startingPoint + ". Total seek time: " + ((DrawGraph) panel).time);
+		// !!!!!! New Code !!!!!!!
+
+
+
+
+
 		graphPanel_.add(head);
 		graphPanel_.repaint();
 		graphPanel_.revalidate();

@@ -1,4 +1,4 @@
-package diskscheduling;
+package com.diskscheduling;
 
 import java.awt.Color;
 

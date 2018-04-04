@@ -1,4 +1,4 @@
-package diskscheduling;
+package com.diskscheduling;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -16,9 +16,31 @@ public class DrawGraph extends JPanel {
 	int[] temp1X;
 	int[] temp2X;
 
+
+
+
+	// !!!!!! New Code !!!!!!!
+	public int time;
+	// !!!!!! New Code !!!!!!!
+
+
+
+
 	public DrawGraph(int[] x) {
 		setPreferredSize(new Dimension(520, 350));
 		this.x = x;
+
+
+
+		// !!!!!! New Code !!!!!!!
+		this.time=0;
+		for (int i = 1; i < this.x.length; i++) {
+			this.time+=Math.abs(this.x[i-1]-this.x[i]);
+		}
+		// !!!!!! New Code !!!!!!!
+
+
+
 
 		int temp = 0;
 		y = new int[x.length];

@@ -1,4 +1,4 @@
-package diskscheduling;
+package com.diskscheduling;
 
 public class SSTF {
 	String[] str;
